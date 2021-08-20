@@ -7214,7 +7214,7 @@ fieldset:disabled .btn {
 .offcanvas-start {
   top: 0;
   left: 0;
-  width: 400px;
+  width: 540px;
   border-right: 1px solid rgba(0, 0, 0, 0.2);
   -webkit-transform: translateX(-100%);
       -ms-transform: translateX(-100%);
@@ -7224,7 +7224,7 @@ fieldset:disabled .btn {
 .offcanvas-end {
   top: 0;
   right: 0;
-  width: 400px;
+  width: 540px;
   border-left: 1px solid rgba(0, 0, 0, 0.2);
   -webkit-transform: translateX(100%);
       -ms-transform: translateX(100%);
@@ -12648,6 +12648,10 @@ fieldset:disabled .btn {
   border-bottom: 1px solid #E31277;
 }
 
+.menu .menuItem.active {
+  border-bottom: 1px solid #E31277;
+}
+
 .recommend .recommendItem {
   width: 35%;
 }
@@ -12681,12 +12685,23 @@ fieldset:disabled .btn {
   }
 }
 
-a {
-  text-decoration: none;
+.carListScrollbar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #212529;
 }
 
-.header {
-  border: 1px solid #707070;
+.carListScrollbar::-webkit-scrollbar {
+  width: 2px;
+  background-color: black;
+}
+
+.carListScrollbar::-webkit-scrollbar-thumb {
+  background-color: #E31277;
+}
+
+a {
+  text-decoration: none;
 }
 
 .header .title {
@@ -12706,6 +12721,23 @@ a {
   background-position: center;
 }
 
+.offcanvasCustomer {
+  margin-top: 84px;
+}
+
+@media (max-width: 767px) {
+  .offcanvasCustomer {
+    margin-top: 65px;
+  }
+}
+
+.offcanvasCustomer .cardPhoto {
+  width: 120px;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .banner {
   background-image: url("../images/ricardo-gomez-angel-UrOZTfXT0h0-unsplash (1).jpg");
   background-size: cover;
@@ -12720,7 +12752,7 @@ a {
 
 @media (max-width: 767px) {
   .hotItem {
-    padding: 24px 3px;
+    padding: 24px 15px;
   }
 }
 
@@ -12747,6 +12779,69 @@ a {
     padding-top: 0;
     padding-bottom: 0;
   }
+}
+
+.liveReview {
+  background-image: url("../images/people2.png");
+  background-size: cover;
+  background-position: center center;
+}
+
+.liveReview .reviewContent {
+  background-color: #190014CC;
+  background-blend-mode: overlay;
+  padding: 40px 24px;
+}
+
+.ticket {
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+  .ticket {
+    margin-top: 44px;
+    margin-bottom: 40px;
+  }
+}
+
+.ticket .ticketPhoto {
+  height: 256px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.ticket .ticketInfo .number, .ticket .ticketInfo .ticketType {
+  padding-top: 88px;
+}
+
+@media (max-width: 767px) {
+  .ticket .ticketInfo .number, .ticket .ticketInfo .ticketType {
+    padding-top: 40px;
+  }
+}
+
+.detailContent {
+  margin-bottom: 60px;
+}
+
+@media (max-width: 767px) {
+  .detailContent {
+    margin-bottom: 24px;
+  }
+}
+
+.detailContent .detailBanner {
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.detailContent .detailDM {
+  height: 559px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*# sourceMappingURL=all.css.map */
