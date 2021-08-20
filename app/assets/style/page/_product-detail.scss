@@ -1,0 +1,38 @@
+.ticket{
+  margin-top: 80px;
+  margin-bottom: 40px;
+  @include phone{
+    margin-top: 44px;
+    margin-bottom: 40px;
+  }
+  .ticketPhoto{
+    height: 256px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .ticketInfo{
+    // height: 256px;
+    .number, .ticketType{
+      padding-top: 88px;
+      @include phone{
+        padding-top: 40px;
+      }
+    }
+  }
+}
+
+.detailContent{
+  margin-bottom: 60px;
+  @include phone{
+    margin-bottom: 24px;
+  }
+  .detailBanner{
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .detailDM{
+    height: 559px;
+    object-fit: cover;
+  }
+}

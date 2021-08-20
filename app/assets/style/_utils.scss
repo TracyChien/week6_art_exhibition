@@ -1,0 +1,54 @@
+.menu{
+  border: 1px solid #707070;
+  // border-top: none;
+  .menuItem{
+    &:hover{
+      border-bottom: 1px solid $secondary;
+    }
+    &.active{
+      border-bottom: 1px solid $secondary;
+    }
+  }
+}
+.recommend{
+  .recommendItem{
+    // margin-right: 30px;
+    width: 35%;
+    @include phone{
+      width: 100%;
+    }
+
+    &:last-child{
+      width: 24%;
+      @include phone{
+        width: 100%;
+      }
+      // margin-right: 0px;
+    }
+
+    .recommendPhoto{
+      object-fit: cover;
+      width: 100%;
+      height: 350px;
+      @include phone{
+        height: 345px;
+      }
+    }
+  }
+}
+.carListScrollbar {
+  //捲軸底色
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: map-get($theme-colors, "dark");
+  }
+  //捲軸寬度
+  &::-webkit-scrollbar {
+    width: 2px;
+    background-color: black;
+  }
+  //捲軸本體顏色
+  &::-webkit-scrollbar-thumb {
+    background-color: map-get($theme-colors, "secondary");
+  }
+}

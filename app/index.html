@@ -5,54 +5,122 @@ engine: ejs
 current: index
 ---
 
-<div class="container">
-  <h1 class="index__h1">這是一段話</h1>
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
-  </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
-  </div>
-</div>
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+<section class="banner">
+  <div class="container h-100">
+    <div class="row align-items-center h-100">
+      <div class="col-md-1"></div>
+      <div class="col-md-11">
+        <h2 class="fs-2 md-2 fw-bold text-white">台北當代藝術展</h2>
+        <p class="fs-5 md-3 fw-bold text-white">01 JUN - 31 OCT</p>
+        <div class="buttonGroup d-flex">
+          <a href="#" class="btn btn-secondary px-6 py-2 me-2">購買票券</a>
+          <a href="#" class="btn btn-outline-light px-6 py-2">詳細資訊</a>
+        </div>
       </div>
     </div>
   </div>
+</section>
+<div class="menu">
+  <div class="container">
+    <div class="overflow-auto">
+      <ul class="mb-0 d-flex justify-content-md-center align-items-center list-unstyled text-nowrap">
+        <li><a href="#" class="d-block px-md-3 px-1 py-2 my-1 me-3 text-black-50 menuItem">音樂</a></li>
+        <li><a href="#" class="d-block px-md-3 px-1 py-2 my-1 me-3 text-black-50 menuItem">戲劇</a></li>
+        <li><a href="product.html" class="d-block px-md-3 px-1 py-2 my-1 me-3 text-black-50 menuItem">設計</a></li>
+        <li><a href="#" class="d-block px-md-3 px-1 py-2 my-1 me-3 text-black-50 menuItem">藝術</a></li>
+        <li><a href="#" class="d-block px-md-3 px-1 py-2 my-1 me-3 text-black-50 menuItem">美食</a></li>
+        <li><a href="#" class="d-block px-md-3 px-1 py-2 my-1 me-3 text-black-50 menuItem">旅遊</a></li>
+        <li><a href="#" class="d-block px-md-3 px-1 py-2 my-1 me-3 text-black-50 menuItem">電影</a></li>
+        <li><a href="#" class="d-block px-md-3 px-1 py-2 my-1 me-3 text-black-50 menuItem">親子</a></li>
+        <li><a href="#" class="d-block px-md-3 px-1 py-2 my-1 text-black-50 menuItem">期間限定</a></li>
+      </ul>
+    </div>
+  </div>
 </div>
+<!-- 熱門特展 -->
+<section class="container hotExhibition py-4 py-md-8">
+  <h2 class="fw-bold mb-2 mb-md-5">熱門特展</h2>
+  <ul class="hotList list-unstyled d-flex flex-column">
+    <li data-aos="fade-right" class="hotItem row mx-0 mb-4">
+      <div class=" hotPhoto col-12 col-md-4 mb-2 mb-md-0">
+        <a href="product.html">
+          <img src="./assets/images/alina-grubnyak-R84Oy89aNKs-unsplash.jpg" alt="">
+        </a>
+      </div>
+      <div class="col-12 col-md-7 hotContentPadding ps-md-5">
+        <div class="d-flex justify-content-between mb-1">
+          <h4 class="fw-bold">2020 台味設計展</h4>
+          <span></span>
+          <span class="d-block d-md-none">01 JUN — 31 OCT</span>
+        </div>
+        <p class="mb-2">$350</p>
+        <p class="m-0 pb-4 pb-md-7 hotContent">一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。</p>
+        <div class="btnGroup d-flex">
+          <a href="#" class="btn btn-primary me-1">購買票券</a>
+          <a href="#" class="btn btn-outline-primary me-1">收藏展覽</a>
+        </div>
+      </div>
+      <div class="d-none d-md-block col-md-1 hotContentPadding">
+        <span>01<br>JUN<br>—<br>31<br>OCT</span>
+      </div>
+    </li>
+    <li data-aos="fade-right" class="hotItem row mx-0 mb-4">
+      <div class=" hotPhoto col-12 col-md-4 mb-2 mb-md-0">
+        <img src="./assets/images/michel-catalisano--a0D9LpcKV8-unsplash.jpg" alt="">
+      </div>
+      <div class="col-12 col-md-7 hotContentPadding ps-md-5">
+        <div class="d-flex justify-content-between mb-1">
+          <h4 class="fw-bold">No.22 線上設計展</h4>
+          <span></span>
+          <span class="d-block d-md-none">01 JUN — 31 OCT</span>
+        </div>
+        <p class="mb-2">$350</p>
+        <p class="m-0 pb-4 pb-md-7 hotContent">這是一個專屬於設計系畢業生的展覽，沒有華麗的名號、沒有浮誇的獎賞。讓我們用作品與理念，去碰撞真實世界裡的各種問題，創造更多美好的人事物。讓這個地球、這個世界變成每一個人心目中的理想鄉。</p>
+        <div class="btnGroup d-flex">
+          <a href="#" class="btn btn-primary me-1">購買票券</a>
+          <a href="#" class="btn btn-outline-primary me-1">收藏展覽</a>
+        </div>
+      </div>
+      <div class="d-none d-md-block col-md-1 hotContentPadding">
+        <span>01<br>JUN<br>—<br>31<br>OCT</span>
+      </div>
+    </li>
+    <li data-aos="fade-right" class="hotItem row mx-0 mb-4">
+      <div class=" hotPhoto col-12 col-md-4 mb-2 mb-md-0">
+        <img src="./assets/images/moralis-tsai-8xsktFRw28I-unsplash.jpg" alt="">
+      </div>
+      <div class="col-12 col-md-7 hotContentPadding ps-md-5">
+        <div class="d-flex justify-content-between mb-1">
+          <h4 class="fw-bold">2020 台味設計展</h4>
+          <span></span>
+          <span class="d-block d-md-none">01 JUN — 31 OCT</span>
+        </div>
+        <p class="mb-2">$350</p>
+        <p class="m-0 pb-4 pb-md-7 hotContent">一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。</p>
+        <div class="btnGroup d-flex">
+          <a href="#" class="btn btn-primary me-1">購買票券</a>
+          <a href="#" class="btn btn-outline-primary me-1">收藏展覽</a>
+        </div>
+      </div>
+      <div class="d-none d-md-block col-md-1 hotContentPadding">
+        <span>01<br>JUN<br>—<br>31<br>OCT</span>
+      </div>
+    </li>
+  </ul>
+</section>
+<!-- 直播回顧 -->
+<section class="container mb-4 mb-md-8">
+  <h2 class="fw-bold mb-2 mb-md-5">直播回顧</h2>
+  <div class="liveReview">
+    <div class="row">
+      <div class="col-12 col-md-5 text-white reviewContent">
+        <h3 class="mb-6"><span class="pe-3 border-end border-white">開幕對談</span><span class="ms-3">藝術展演巡禮</span></h3>
+        <div class="reviewPhoto mb-3"><img src="./assets/images/people.png" alt=""></div>
+        <h5 class="mb-2">臺北現代聯合總監｜Ken Hsu</h5>
+        <p class="mb-3">獨家由藝術家、策展人、畫廊總監帶您欣賞台北藝術特展，感受雕塑、展演及當代日常文化之間微妙的關係。</p>
+        <a href="#" class="btn btn-secondary px-6">點此觀看</a>
+      </div>
+      <div class="d-none d-md-block col-md-7"></div>
+    </div>
+  </div>
+</section>

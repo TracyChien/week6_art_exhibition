@@ -1,6 +1,11 @@
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "./helpers/variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "base";
+@import "utils";
 
+@import './layout/index';
 
-@import './layout/index.scss'
+// page
+@import './page/index';
+@import './page/product-detail';
